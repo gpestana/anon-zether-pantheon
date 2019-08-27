@@ -4,8 +4,6 @@ const ZSC = require("../contract-artifacts/artifacts/ZSC.json");
 const Deployer = require('./deployer.js');
 const Provider = require('./provider.js');
 
-const sleep = require('sleep');
-
 (async () => {
     var provider = new Provider("ws://localhost:23000");
     const web3 = new Web3(await provider.getProvider());
